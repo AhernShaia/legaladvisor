@@ -13,6 +13,7 @@ COPY ./package[s] ./packages
 RUN poetry install  --no-interaction --no-ansi --no-root
 
 COPY ./app ./app
+COPY ./rag ./rag
 
 RUN poetry install --no-interaction --no-ansi
 
